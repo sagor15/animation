@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cirlce">
+        <div class="logo">
+            <div class="text">
+                <p>Md Sagor ahmmed-- Creative Designer</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const text = document.querySelector('.text p');
+text.innerHTML = text.innerHTML.split("").map(
+    (char,i) => 
+    `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>` 
+).join("")
+console.log(text)
+    </script>
+</body>
+</html>
